@@ -13,7 +13,7 @@ COPY . .
 RUN pnpm build
 
 # ---------- Production Stage ---------- 
-FROM nginxinc/nginx-unprivileged:alpine3.23-slim AS production
+FROM  nginxinc/nginx-unprivileged:alpine3.23-perl AS production
 COPY --from=base /app/dist /usr/share/nginx/html
 EXPOSE 8080
 CMD [ "nginx","-g","daemon off;" ]
