@@ -32,7 +32,7 @@
          Notice
         </motion.h2>
 
-        <motion.p>
+        <motion.p class="p-2.5 text-2xl">
           Please be advised that registration for the CWA Event is now closed.
         </motion.p>
 
